@@ -51,19 +51,19 @@ public class SongLoader : MonoBehaviour
                 // Instantiate function
                 if (nextBeat.input == "Left")
                 {
-                    Instantiate(ArrowLeftPrefab, ArrowSpawnLeft, Quaternion.identity);
+                    Instantiate(ArrowLeftPrefab, ArrowSpawnLeft, ArrowLeftPrefab.transform.rotation);
                 }
                 if (nextBeat.input == "Down")
                 {
-                    Instantiate(ArrowDownPrefab, ArrowSpawnDown, Quaternion.identity);
+                    Instantiate(ArrowDownPrefab, ArrowSpawnDown, ArrowDownPrefab.transform.rotation);
                 }
                 if (nextBeat.input == "Up")
                 {
-                    Instantiate(ArrowUpPrefab, ArrowSpawnUp, Quaternion.identity);
+                    Instantiate(ArrowUpPrefab, ArrowSpawnUp, ArrowUpPrefab.transform.rotation);
                 }
                 if (nextBeat.input == "Right")
                 {
-                    Instantiate(ArrowRightPrefab, ArrowSpawnRight, Quaternion.identity);
+                    Instantiate(ArrowRightPrefab, ArrowSpawnRight, ArrowRightPrefab.transform.rotation);
                 }
                 
                 // remove the beat from the list

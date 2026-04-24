@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 372298737788532201}
+  - component: {fileID: -4298847225905719695}
   - component: {fileID: 3341081589568464107}
   m_Layer: 0
   m_Name: LeftArrow
@@ -32,6 +33,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &-4298847225905719695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459691161128826470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307f1f13c68b0ea4890c6ab913b7c7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArrowMove
+  startLocation: {x: 5.610301, y: 5.5, z: 0}
+  endLocation: {x: 5.610301, y: -2.2671, z: 0}
+  movementDuration: 1
+  currentTimeMoving: 0
 --- !u!212 &3341081589568464107
 SpriteRenderer:
   serializedVersion: 2

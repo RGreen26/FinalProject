@@ -105,6 +105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   startLocation: {x: 6.6113, y: 5.5, z: 0}
-  endLocation: {x: 6.6113, y: -2.2671, z: 0}
+  endLocation: {x: 6.6113, y: -2.1481, z: 0}
   movementDuration: 1
   currentTimeMoving: 0
