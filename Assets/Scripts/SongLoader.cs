@@ -45,7 +45,7 @@ public class SongLoader : MonoBehaviour
             Beat nextBeat = beats[0];
 
             // display the beat as soon as the time stamp passes
-            if (currentTime > nextBeat.time - 1)
+            if (currentTime > nextBeat.time - 1.25)
             {
                 // spawn the beat prefab in the correct location
                 // Instantiate function
