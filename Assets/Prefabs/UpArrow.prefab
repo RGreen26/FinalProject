@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6663693427108763028}
   - component: {fileID: -2955561238186033047}
   - component: {fileID: -3844199252915271417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UpArrow
   m_TagString: Button
   m_Icon: {fileID: 0}

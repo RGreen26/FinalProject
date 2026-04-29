@@ -5,6 +5,7 @@ public class ButtonInput : MonoBehaviour
     public bool buttonPress;
     public bool buttonExpected;
     public float points;
+    public int layer = 1 << 6;
 
     // Update is called once per frame
     void Update()
@@ -17,18 +18,15 @@ public class ButtonInput : MonoBehaviour
 
     void FixedUpdate()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, +0.67)
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, +10f, layer);
 
         if (hit)
         {
-            if (hit.distance < 6f)
+            if (hit.distance < 0.75f)
+            {
+                Debug.Log("Whitney Houston");
+            }
         }
-        else
-        {
-
-        }
-
-
     }
     // void OnTriggerEnter2D(Collider2D other)
     // {

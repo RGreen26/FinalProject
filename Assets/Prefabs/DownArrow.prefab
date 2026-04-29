@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4580982471778119207}
   - component: {fileID: -1645308708956209733}
   - component: {fileID: 6157746714400791213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DownArrow
   m_TagString: Button
   m_Icon: {fileID: 0}

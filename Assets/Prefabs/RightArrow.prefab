@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5844983112306395490}
   - component: {fileID: -3610228200569788646}
   - component: {fileID: -6473005014983633664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightArrow
   m_TagString: Button
   m_Icon: {fileID: 0}
