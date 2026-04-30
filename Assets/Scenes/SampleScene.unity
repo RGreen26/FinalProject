@@ -380,6 +380,8 @@ MonoBehaviour:
   buttonPress: 0
   buttonExpected: 0
   points: 0
+  layer: 64
+  ExpectedKey: 119
 --- !u!1 &299149318
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +564,8 @@ MonoBehaviour:
   buttonPress: 0
   buttonExpected: 0
   points: 0
+  layer: 64
+  ExpectedKey: 100
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1683,8 @@ MonoBehaviour:
   buttonPress: 0
   buttonExpected: 0
   points: 0
+  layer: 64
+  ExpectedKey: 115
 --- !u!1 &1718909724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,6 +2004,8 @@ MonoBehaviour:
   buttonPress: 0
   buttonExpected: 0
   points: 0
+  layer: 64
+  ExpectedKey: 97
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

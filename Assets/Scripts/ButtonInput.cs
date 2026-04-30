@@ -6,13 +6,20 @@ public class ButtonInput : MonoBehaviour
     public bool buttonExpected;
     public float points;
     public int layer = 1 << 6;
+    public KeyCode ExpectedKey;
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(ExpectedKey))
+        {
+            buttonPress = true;
+        }
+
         if (buttonExpected && buttonPress)
         {
             points ++ ;
+            buttonPress = false;
         }
     }
 
@@ -24,7 +31,11 @@ public class ButtonInput : MonoBehaviour
         {
             if (hit.distance < 0.75f)
             {
-                Debug.Log("Whitney Houston");
+                buttonExpected = true;
+            }
+            else
+            {
+                buttonExpected = false;
             }
         }
     }
