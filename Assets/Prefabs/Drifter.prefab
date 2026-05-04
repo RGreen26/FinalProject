@@ -151,7 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda6d65eefdae594c81790c5f396908f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  startLocation: {x: 0, y: 0, z: 0}
-  endLocation: {x: 0, y: 0, z: 0}
-  movementDuration: 0
+  startLocation: {x: -12, y: -4, z: 0}
+  endLocation: {x: 4, y: -4, z: 0}
+  movementDuration: 6
+  layer: 64
   currentTimeMoving: 0
+  canMove: 1

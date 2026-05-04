@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     public int layer = 1 << 6;
     public float currentTimeMoving;
 
-    public bool canMove;
+    public bool canMove = true;
 
     void Update()
     {
