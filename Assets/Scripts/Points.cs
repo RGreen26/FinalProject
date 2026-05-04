@@ -1,13 +1,13 @@
-using UnityEngine;
-using TMPro;
+//using UnityEngine;
+//using TMPro;
 
-public class Points : MonoBehaviour
-{
-    public TMP_Text Points;
-    public ButtonInput totalpoints;
+//public class Points : MonoBehaviour
+////{
+////    public TMP_Text Points;
+////    public ButtonInput totalpoints;
 
-    void Update()
-    {
-        Points.text = totalpoints.points;
-    }
-}
+////    //void Update()
+////    //{
+////    //    Points.text = totalpoints.points;
+////    //}
+//}

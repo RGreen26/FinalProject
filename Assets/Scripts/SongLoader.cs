@@ -9,7 +9,7 @@ public class SongLoader : MonoBehaviour
     public List<Beat> beats;
     public AudioSource songAudio;
 
-    private bool started;
+    public bool started;
 
     public Vector3 ArrowSpawnLeft, ArrowSpawnDown, ArrowSpawnUp, ArrowSpawnRight;
     public GameObject ArrowLeftPrefab;

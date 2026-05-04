@@ -1131,6 +1131,7 @@ GameObject:
   - component: {fileID: 927543403}
   - component: {fileID: 927543402}
   - component: {fileID: 927543404}
+  - component: {fileID: 927543405}
   m_Layer: 0
   m_Name: Child Camera
   m_TagString: Untagged
@@ -1168,6 +1169,7 @@ MonoBehaviour:
   beatmapFilename: Anguish
   beats: []
   songAudio: {fileID: 927543403}
+  started: 0
   ArrowSpawnLeft: {x: 5.610301, y: 5.5, z: 0}
   ArrowSpawnDown: {x: 6.6113, y: 5.5, z: 0}
   ArrowSpawnUp: {x: 7.57, y: 5.5, z: 0}
@@ -1285,6 +1287,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9330a2367821094d98379e03814526e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &927543405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927543400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4bc1cccec389e428cc2d44d9e9dea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawn
+  canSpawn: 1
+  Spawn: 1
+  currentTime: 0
+  Timer: 3
+  data: {fileID: 927543402}
 --- !u!1 &1208952530
 GameObject:
   m_ObjectHideFlags: 0
