@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    public bool canSpawn = true;
+    public bool canSpawn = false;
     public bool Spawn = true;
-    public float currentTime;
     public float Timer;
+
+    public GameObject Drifter;
     
     public SongLoader data;
 
@@ -24,13 +25,8 @@ public class EnemySpawn : MonoBehaviour
             if (Timer > 3)
             {
                 Timer = 0;
-            }
-            
-            currentTime += Time.deltaTime;
 
-            if (currentTime > Timer)
-            {
-                
+                Instantiate(Drifter, new Vector3(-12, -4, 0), Quaternion.identity);
             }
         }
     }
