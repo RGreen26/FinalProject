@@ -5,7 +5,7 @@ public class EnemySpawn : MonoBehaviour
     public bool canSpawn = true;
     public bool Spawn = true;
     public float currentTime;
-    public float Timer ;
+    public float Timer;
     
     public SongLoader data;
 
@@ -14,23 +14,24 @@ public class EnemySpawn : MonoBehaviour
     {
         if (data.started == true)
         {
-            Debug.Log("Forsic");
             canSpawn = true;
         }
 
         if (canSpawn == true)
         {
-            Debug.Log("Fire");
+            Timer += Time.deltaTime;
+
+            if (Timer > 3)
+            {
+                Timer = 0;
+            }
+            
+            currentTime += Time.deltaTime;
+
+            if (currentTime > Timer)
+            {
+                
+            }
         }
-
-        //Time Clock Counter - 3 Secounds at first
-
-        currentTime += Time.deltaTime;
-
-        if (currentTime > Timer)
-        {
-
-        }
-
     }
 }

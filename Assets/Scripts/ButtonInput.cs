@@ -15,12 +15,22 @@ public class ButtonInput : MonoBehaviour
         {
             buttonPress = true;
         }
+        else
+        {
+            buttonPress = false;
+        }
 
         if (buttonExpected && buttonPress)
         {
             points ++ ;
             buttonPress = false;
         }
+
+        if (buttonExpected == true && buttonPress == false)
+        {
+            Debug.Log ("Fail");
+        }
+
     }
 
     void FixedUpdate()
@@ -38,22 +48,5 @@ public class ButtonInput : MonoBehaviour
                 buttonExpected = false;
             }
         }
-    }
-    // void OnTriggerEnter2D(Collider2D other)
-    // {
-    //   if (other.gameObject.tag == "Button")
-    //   {
-    //     buttonExpected = true;
-    //   }
-    // }
-
-    // void OnTriggerExit2D(Collider2D other)
-    // {
-    //     if (other.gameObject.tag == "Button")
-    //     {
-    //         buttonExpected = false;
-    //     }
-    // }
-    
-    
+    }    
 }
